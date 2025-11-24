@@ -1,12 +1,17 @@
 <script setup lang="ts">
 defineProps<{
   href?: string
+  variant?: 'default' | 'outline'
 }>()
 </script>
 
 <template>
-  <a v-if="href" href="" class="button"><slot></slot></a>
-  <button v-else class="button"><slot></slot></button>
+  <a v-if="href" href="" class="button" :class="{ '-outline': variant === 'outline' }"
+    ><slot></slot
+  ></a>
+  <button v-else class="button" :class="{ '-outline': variant === 'outline' }">
+    <slot></slot>
+  </button>
 </template>
 
 <style lang="scss">
@@ -25,6 +30,14 @@ defineProps<{
   &:hover {
     --button-color: var(--color-primary);
     --button-bg-color: transparent;
+  }
+  &.-outline {
+    --button-color: var(--color-primary);
+    --button-bg-color: transparent;
+    &:hover {
+      --button-color: var(--color-text);
+      --button-bg-color: var(--color-primary);
+    }
   }
 }
 </style>
