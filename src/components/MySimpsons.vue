@@ -75,7 +75,7 @@ const filteredSimpsons = computed(() =>
   list-style: none;
   padding: 0;
   @include medium-up {
-    display: flex;
+    //display: flex;
   }
 }
 </style>

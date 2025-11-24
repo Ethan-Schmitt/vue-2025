@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 defineProps<{
   as: 'h1' | 'h2' | 'h3'
-  size: 'small'
 }>()
 </script>
 
