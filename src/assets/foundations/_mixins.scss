@@ -1,5 +1,5 @@
-@use "variables.scss" as *;
-@use "functions.scss" as *;
+@use 'variables.scss' as *;
+@use 'functions.scss' as *;
 
 @mixin title {
   font-size: rem(40);
@@ -8,7 +8,6 @@
 }
 
 @mixin small-only {
-  font-size: rem(100);
   @media (max-width: $small-breakpoint) {
     @content;
   }

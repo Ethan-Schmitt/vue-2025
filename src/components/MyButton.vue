@@ -24,7 +24,6 @@ defineProps<{
 </template>
 
 <style lang="scss">
-@use '@/assets/foundations/functions' as *;
 .button {
   --button-color: var(--color-text);
   --button-bg-color: var(--color-primary);
@@ -36,6 +35,12 @@ defineProps<{
   border-radius: rem(4);
   text-decoration: none;
   font-size: var(--font-size-base);
+  @include medium-up {
+    padding: rem(15) rem(25);
+  }
+  @include small-only {
+    padding: rem(5) rem(10);
+  }
   &:hover {
     --button-color: var(--color-primary);
     --button-bg-color: transparent;
