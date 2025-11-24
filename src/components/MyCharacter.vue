@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import MyTitle from './MyTitle.vue'
 defineProps<{
   prenom: string
   nom: string
@@ -9,7 +10,7 @@ defineProps<{
 <template>
   <div class="character">
     <img :src="`/images/${img}`" />
-    <h3>{{ prenom }} {{ nom }}</h3>
+    <MyTitle as="h3">{{ prenom }} {{ nom }}</MyTitle>
     <p>{{ description }}</p>
   </div>
 </template>

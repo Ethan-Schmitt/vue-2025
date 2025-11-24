@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import MyButton from '@/components/MyButton.vue'
 import MySimpsons from '@/components/MySimpsons.vue'
+import MyTitle from '@/components/MyTitle.vue'
 </script>
 
 <template>
   <main>
-    <h1>Welcome to the Home Page</h1>
+    <MyTitle as="h1">Homepage</MyTitle>
 
     <MyButton href="/about">Click me 1</MyButton>
     <MyButton href="/about" variant="outline">Click me 1 Outline</MyButton>

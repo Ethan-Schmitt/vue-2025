@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import MyTitle from './MyTitle.vue'
 import MyCharacter from '@/components/MyCharacter.vue'
 import { computed, reactive } from 'vue'
 
@@ -45,6 +46,7 @@ const filteredSimpsons = computed(() =>
 )
 </script>
 <template>
+  <MyTitle as="h2">Liste de tous les Simpsons qui ont un "a" dans le prénom</MyTitle>
   <ul class="simpsons">
     <!-- <MyCharacter
       v-for="(simpson, index) in simpsonsArray"
