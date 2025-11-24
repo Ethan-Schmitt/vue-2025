@@ -8,6 +8,8 @@ import MyButton from '@/components/MyButton.vue'
 
     <MyButton href="/about">Click me 1</MyButton>
     <MyButton href="/about" variant="outline">Click me 1 Outline</MyButton>
+    <MyButton href="/about" variant="outline" size="small">Click me Outline small</MyButton>
+    <MyButton href="/about" size="small">Click me small</MyButton>
     <MyButton>Click me 2</MyButton>
   </main>
 </template>
