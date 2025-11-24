@@ -1,0 +1,32 @@
+@use "../foundations/functions" as *;
+
+.button {
+  background: black;
+  color: white;
+  font-size: rem(32);
+  padding: rem(8) rem(16);
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: rem(10);
+  cursor: pointer;
+  &.-small {
+    padding: rem(4) rem(8);
+    font-size: rem(12);
+  }
+  &.-large {
+    padding: rem(16) rem(32);
+    font-size: rem(40);
+  }
+  &.-outline {
+    background: transparent;
+    color: black;
+    &:hover {
+      background: black;
+      color: white;
+    }
+  }
+  &:hover {
+    background: transparent;
+    color: black;
+  }
+}
